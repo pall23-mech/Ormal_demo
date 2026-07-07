@@ -39,11 +39,9 @@ DIARIZATION_PARAMS = {
     "clustering": {"threshold": 0.6, "Fa": 0.07, "Fb": 0.8},
 }
 
-# Workers = half the cores; each worker gets the other half for its PyTorch ops.
-# Total threads used = N_WORKERS * THREADS_PER_WORKER ≈ n_cpu.
 _N_CPU = os.cpu_count() or 1
-N_WORKERS = max(1, _N_CPU // 2)
-THREADS_PER_WORKER = max(1, _N_CPU // N_WORKERS)
+N_WORKERS = max(1, _N_CPU // 2)   # 10 on 20-core
+THREADS_PER_WORKER = 2             # per worker during parallel phase
 
 # ── Model loading ─────────────────────────────────────────────────────────────
 
