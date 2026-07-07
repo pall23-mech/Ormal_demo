@@ -1,0 +1,12 @@
+torch>=2.0
+torchaudio
+soundfile
+numpy
+gradio==6.19.0
+transformers==4.57.6
+huggingface-hub==0.36.2
+pyannote.audio>=3.1
+optimum[onnxruntime]==2.1.0
+onnxruntime>=1.17
+rapidfuzz>=3.0
+librosa
