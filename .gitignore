@@ -1,0 +1,11 @@
+models/
+.venv/
+.claude/
+__pycache__/
+*.pyc
+*.pyo
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.mp4
