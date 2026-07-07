@@ -1,0 +1,17 @@
+# Install CPU PyTorch first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#
+# Then:
+#   pip install -r optimized/requirements.txt
+
+# ONNX Runtime (CPU)
+onnxruntime>=1.17.0
+optimum[onnxruntime]>=1.17.0
+
+# Same as root requirements.txt
+pyannote.audio>=3.1.0
+transformers>=4.39.0
+gradio>=4.0.0
+soundfile>=0.12.0
+librosa>=0.10.0
+huggingface_hub>=0.21.0
